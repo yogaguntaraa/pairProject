@@ -7,6 +7,12 @@ app.use(express.urlencoded({extended: true}));
 
 
 app.get("/", );
+app.get("/users", );
+app.get("/courses", );
+app.get("/users/:id", );
+app.post("/users/:id", );
+app.get("/courses/:id", );
+app.post("/courses/:id", );
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
