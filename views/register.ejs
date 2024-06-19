@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form Pembelian</title>
+    <title>Registration Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 400px;
             margin: auto;
             background: #fff;
             padding: 30px;
@@ -29,7 +29,7 @@
             margin-bottom: 10px;
             color: #666;
         }
-        select, input[type=text], input[type=number] {
+        input[type=text], input[type=password], select {
             width: calc(100% - 20px);
             padding: 10px;
             margin-bottom: 15px;
@@ -52,27 +52,22 @@
     </style>
 </head>
 <body>
-    
     <div class="container">
-        <h1>Purchase Form</h1>
-        <% data.forEach(course => { %>
-        <form action="/courses/<%= course.id %>/generateInvoice" method="POST">
-            <label for="productName">Course Name:</label>
-            <select id="productName" name="productName">
-                    <option value="<%= course.name %>"><%= course.name %></option>
-                <% }) %>
+        <h1>Registration Form</h1>
+        <form action="/register" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="instructor">Instructor</option>
+                <option value="user">User</option>
             </select>
 
-            <label for="price">Price (Rp):</label>
-            <input type="number" id="price" name="price" placeholder="Enter price in Rp">
-
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity">
-
-            <label for="buyerName">Buyer Name:</label>
-            <input type="text" id="buyerName" name="buyerName" placeholder="Enter buyer's name">
-
-            <button type="submit">Create Invoice</button>
+            <button type="submit">Register</button>
         </form>
     </div>
 </body>

@@ -2,9 +2,27 @@ const { Courses } = require("../models");
 const easyinvoice = require('easyinvoice');
 
 class Controller {
+    static async registerForm(req, res) {
+        try {
+            // res.render("register");
+        } catch (err) {
+            console.log(err);
+            res.send(err.message);
+        }
+    }
+
+    static async postRegister(req, res) {
+        try {
+            
+        } catch (err) {
+            console.log(err);
+            res.send(err.message);
+        }
+    }
+
     static async home(req, res) {
         try {
-            res.render("home");
+            
         } catch (err) {
             console.log(err);
             res.send(err.message);
