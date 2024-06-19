@@ -1,0 +1,32 @@
+[
+    {
+        "UserId": 1,
+        "CourseId": 1,
+        "startDate": "2024-01-01"
+    },
+    {
+        "UserId": 1,
+        "CourseId": 2,
+        "startDate": "2024-02-01"
+    },
+    {
+        "UserId": 2,
+        "CourseId": 1,
+        "startDate": "2024-01-15"
+    },
+    {
+        "UserId": 2,
+        "CourseId": 3,
+        "startDate": "2024-03-01"
+    },
+    {
+        "UserId": 3,
+        "CourseId": 4,
+        "startDate": "2024-01-20"
+    },
+    {
+        "UserId": 3,
+        "CourseId": 5,
+        "startDate": "2024-02-15"
+    }
+]

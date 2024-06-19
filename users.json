@@ -1,0 +1,30 @@
+[
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phoneNumber": "081388452",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "phoneNumber": "087724646",
+        "password": "securepassword",
+        "role": "user"
+    },
+    {
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "phoneNumber": "081395456",
+        "password": "alicepassword",
+        "role": "user"
+    },
+    {
+        "name": "Bob Brown",
+        "email": "bob.brown@example.com",
+        "phoneNumber": "0812588549",
+        "password": "bobpassword",
+        "role": "user"
+    }
+]
