@@ -13,6 +13,7 @@
     "sequelize-cli": "^6.6.2"
   },
   "dependencies": {
+    "easyinvoice": "^3.0.47",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "pg": "^8.12.0",

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 ,p {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        #pdf {
+            margin-bottom: 20px;
+        }
+        button[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice</h1>
+        <p>Terima kasih atas pembelian Anda.</p>
+
+        <div id="pdf"></div>
+        <script src="https://cdn.jsdelivr.net/npm/easyinvoice/dist/easyinvoice.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                easyinvoice.render('pdf', '<%= pdf %>');
+            });
+        </script>
+
+        <h2>Course Details</h2>
+        <p><strong>Name:</strong> <%= course.name %></p>
+        <p><strong>Price:</strong> Rp <%= course.price.toLocaleString() %></p>
+        <p><strong>Duration:</strong> <%= course.duration %> minutes</p>
+
+        <form action="/downloadInvoice" method="POST">
+            <input type="hidden" name="pdf" value="<%= pdf %>">
+           <p> <button type="submit">Download Invoice</button> </p>
+        </form>
+    </div>
+</body>
+</html>
