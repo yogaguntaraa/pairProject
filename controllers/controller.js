@@ -50,17 +50,6 @@ class Controller {
         }
     }
 
-    // static async incrementCourseById(req, res) {
-    //     try {
-    //         const course = await Courses.findByPk(req.params.id);
-    //         await course.increment("amount")
-    //         res.redirect("/courses");
-    //     } catch (err) {
-    //         console.log(err);
-    //         res.send(err.message);
-    //     }
-    // }
-
     static async buyCourse(req, res) {
         try {
             const { id } = req.params;
