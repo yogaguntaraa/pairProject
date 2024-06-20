@@ -58,6 +58,7 @@
         <th>No</th>
         <th>Name</th>
         <th>Duration</th>
+        <th>Amount</th>
         <th>Action</th>
     </tr>
     <% data.forEach((course, index) => { %>
@@ -65,6 +66,7 @@
             <td><%= index + 1 %></td>
             <td><%= course.name %></td>
             <td><%= course.duration %> Minute(s)</td>
+            <td><%= course.amount %></td>
             <td class="action-btn">
                 <a href="/courses/<%= course.id %>"><button>See Detail</button></a>
             </td>

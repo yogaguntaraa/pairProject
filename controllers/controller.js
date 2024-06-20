@@ -1,4 +1,4 @@
-const { Courses } = require("../models");
+const { Courses, UserCourse, User } = require("../models");
 const easyinvoice = require('easyinvoice');
 
 class Controller {

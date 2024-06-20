@@ -2,26 +2,31 @@
     {
       "name": "Web Development Bootcamp",
       "price": 200000,
-      "duration": 30
+      "duration": 30,
+      "amount": 20
     },
     {
       "name": "Data Science Fundamentals",
       "price": 150000,
-      "duration": 45
+      "duration": 45,
+      "amount": 19
     },
     {
       "name": "Mobile App Development Course",
       "price": 180000,
-      "duration": 60
+      "duration": 60,
+      "amount": 17
     },
     {
       "name": "Graphic Design Masterclass",
       "price": 120000,
-      "duration": 35
+      "duration": 35,
+      "amount": 24
     },
     {
       "name": "Blockchain Essentials",
       "price": 250000,
-      "duration": 35
+      "duration": 35,
+      "amount": 15
     }
   ]
