@@ -63,11 +63,12 @@
     </tr>
     <% data.forEach((course, index) => { %>
         <tr>
-            <td><%= index + 1 %></td>
+            <td><%= ++index %></td>
             <td><%= course.name %></td>
             <td><%= course.duration %> Minute(s)</td>
             <td><%= course.amount %></td>
             <td class="action-btn">
+                <a href="/courses/<%= course.id %>/increment"><button>Add Course</button></a>
                 <a href="/courses/<%= course.id %>"><button>See Detail</button></a>
             </td>
         </tr>
